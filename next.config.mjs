@@ -6,7 +6,7 @@ const nextConfig = {
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.(pdf)$/,
-      type: "asset/resource",
+      type: "asset/source",
     });
     return config;
   },

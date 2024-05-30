@@ -27,7 +27,6 @@ import web4 from "../public/web4.png"
 import web5 from "../public/web5.png"
 import web6 from "../public/web6.png"
 import {useState} from "react";
-import { Document,Page } from "react-pdf"
 import pdf from "../public/CV2024.pdf"
 
 // const PDFViewer = () => {
@@ -94,7 +93,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={mathGame} width={85} height={85}/>
+              <Image className="display: inline-block" src={mathGame} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Math Game</h3>
               <p className="py-2">
                 A very simple math game app.
@@ -107,7 +106,7 @@ export default function Home() {
               
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={calculator} width={85} height={85}/>
+              <Image className="display: inline-block" src={calculator} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Calculator</h3>
               <p className="py-2">
                 A calculator app.
@@ -120,7 +119,7 @@ export default function Home() {
               
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={habitLogger} width={85} height={85}/>
+              <Image className="display: inline-block" src={habitLogger} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Habit Logger</h3>
               <p className="py-2">
               An app that logs your habits.
@@ -135,7 +134,7 @@ export default function Home() {
               
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={codingTracker} width={85} height={85}/>
+              <Image className="display: inline-block" src={codingTracker} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Coding Tracker</h3>
               <p className="py-2">
                 An app that tracks coding sessions.
@@ -151,7 +150,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Console Application</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={flashcards} width={85} height={85}/>
+              <Image className="display: inline-block" src={flashcards} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">FlashCards</h3>
               <p className="py-2">
                 Create and use FlashCards for study sessions.
@@ -167,7 +166,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Console Application</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={drinksInfo} width={85} height={85}/>
+              <Image className="display: inline-block" src={drinksInfo} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Drinks Info</h3>
               <p className="py-2">
                 Consume an external API with HTTP requests.
@@ -181,7 +180,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Console Application</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={phoneBook} width={85} height={85}/>
+              <Image className="display: inline-block" src={phoneBook} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Phone Book</h3>
               <p className="py-2">
                 A phone book app that manages contacts with CRUD operations.
@@ -196,7 +195,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Console Application</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={shiftsLogger} width={85} height={85}/>
+              <Image className="display: inline-block" src={shiftsLogger} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Shifts Logger</h3>
               <p className="py-2">
                 An app where workers can log their shifts.
@@ -212,7 +211,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Console Application</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/5 flex-1">
-              <Image className="display: inline-block" src={dinnerTableOptimizer} width={85} height={85}/>
+              <Image className="display: inline-block" src={dinnerTableOptimizer} width={85} height={85} alt=""/>
               <h3 className="text-lg font-medium pt-8 pb-2">Dinner Table Optimizer</h3>
               <p className="py-2">
                 Optimize placement of dinner guests.
