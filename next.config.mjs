@@ -3,28 +3,17 @@ const nextConfig = {
   reactStrictMode: true,
   basePath: "/react-portfolio",
   output: "export",  // <=== enables static exports
-  webpack: (config, { isServer }) => {
-    // Add a rule to handle PDF files
+  webpack: (config, options) => {
     config.module.rules.push({
-      test: /\.(pdf)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            publicPath: '/_next/',
-            name: 'static/media/[name].[hash].[ext]',
-          },
-        },
-      ],
-    });
+      test: /\.pdf/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/[hash][ext]',
+      },
+    })
 
-    if (!isServer) {
-      // Ensure that the file-loader is applied to the client as well
-      config.resolve.fallback.fileSystem = false;
-    }
-
-    return config;
-  },
+    return config
+},
 };
 
 

@@ -27,7 +27,7 @@ import web4 from "../public/web4.png"
 import web5 from "../public/web5.png"
 import web6 from "../public/web6.png"
 import {useState} from "react";
-import pdf from "../public/CV2024.pdf"
+// import pdf from "../public/CV2024.pdf"
 
 // const PDFViewer = () => {
 //   const pdfURL = "../public/CV2024.pdf";
@@ -60,7 +60,7 @@ export default function Home() {
                 className="cursor-pointer text-2xl"/>
               </li> */}
               <li>
-                <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href={pdf} download={pdf}>
+                <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="./CV2024.pdf" download>
                 Download CV
                 </a>
               </li>
