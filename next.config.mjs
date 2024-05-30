@@ -6,10 +6,11 @@ const nextConfig = {
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.(pdf)$/,
-      type: "asset/source",
+      type: "asset/source"
     });
     return config;
   },
 };
+
 
 export default nextConfig;
