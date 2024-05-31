@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out --nojekyll --cname https://gurrappp.github.io/react-portfolio",
+    "deploy": "npm run build && npm run export && touch ./out/.nojekyll && gh-pages -d out -t true",
     "static": "next build && next export && touch ./out/.nojekyll && echo 'https://gurrappp.github.io/react-portfolio' > ./out/CNAME",
     "dev": "next dev",
     "build": "next build",
